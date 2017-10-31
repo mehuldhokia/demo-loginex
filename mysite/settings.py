@@ -25,7 +25,7 @@ SECRET_KEY = 'i%06y2q&4l-!nv*8oolv470b!o)!xg*^9f7^d=q10#b$wd%c_e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['demo-loginex.herokuapp.com']
+ALLOWED_HOSTS = ['demo-loginex.herokuapp.com']      # my code
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'mysite.core',
+    'mysite.core',      # my code
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',       # my code
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'mysite/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'mysite/templates')],       # my code
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,20 +115,22 @@ USE_L10N = True
 
 USE_TZ = True
 
+# my code
 import dj_database_url
 db_from_venv = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_venv)
 
 
-
+# my code
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = 'home'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 STATIC_URL = '/static/'
+
+# my code
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, "static")
 ]
