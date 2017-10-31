@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}Login Ex{% endblock %}</title>
+<style>
+body
+{	font-family: "Bookman Old Style";	font-size:16px;	}
+input
+{	font-family: "Bookman Old Style";	font-size:14px;	padding:5px;	}
+a
+{	color: orange;	text-decoration: none;	}
+a:hover
+{	color: purple;	text-decoration: none;	}
+hr
+{	border: 1px #dcdcdc solid; border-collapse:collapse;	}
+table, td, th
+{	padding:10px; border: 1px #dcdcdc solid; border-collapse:collapse;	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>My Login Site</h1>
+		{% if user.is_authenticated %}
+		<a href="{% url 'logout' %}">logout</a>
+		{% else %}
+		<a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a>
+		{% endif %}
+		<hr align="left">
+	</header>
+	<main>
+		{% block content %}
+		{% endblock %}
+	</main>
+</body>
+</html>

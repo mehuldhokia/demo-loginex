@@ -1,0 +1,18 @@
+https://devcenter.heroku.com/articles/heroku-cli#windows
+
+Heroku Account Information
+--------------------------
+
+First Name	: Mehul
+
+Last Name	: Dhokia
+
+Email Address	: mehuldhokia@yahoo.com
+
+Company Name	: drvrgit
+
+Country		: India
+
+Primary Development Langauge	: Python
+
+Password	: django8888

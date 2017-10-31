@@ -1,0 +1,34 @@
+https://github.com/mehuldhokia/demo-loginex.git
+
+git init
+--------
+http://kbroman.org/github_tutorial/pages/init.html
+
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
+
+
+github Account
+--------------
+https://github.com/
+
+
+Username	: mehuldhokia
+Email		: mehuldhokia@yahoo.com
+Password	: drowssap7
+
+
+Step Questions...
+Choose your personal plan
+	Unlimited public repositories for free.
+
+How would you describe your level of programming experience?
+	Totally new to programming
+
+What do you plan to use GitHub for?
+	Design, School Projects, Development, Other (Education)
+
+Which is closest to how you would describe yourself?
+	I'm a Student
+
+What are you interested in?
+	Web-development
