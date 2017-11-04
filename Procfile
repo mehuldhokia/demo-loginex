@@ -1,1 +1,1 @@
-web: gunicorn loginex.wsgi
+web: gunicorn mysite.wsgi

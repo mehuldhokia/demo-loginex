@@ -25,6 +25,7 @@ SECRET_KEY = 'i%06y2q&4l-!nv*8oolv470b!o)!xg*^9f7^d=q10#b$wd%c_e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['demo-loginex.herokuapp.com']      # my code
 
 
@@ -119,7 +120,6 @@ USE_TZ = True
 import dj_database_url
 db_from_venv = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_venv)
-
 
 # my code
 LOGIN_URL = 'login'
